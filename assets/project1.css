@@ -1,0 +1,112 @@
+/*Start Global rules*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*End global rules*/
+
+/*Start body*/
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #222;
+    box-shadow: 0 0 20px #000;
+    width: 300px;
+}
+
+.display input{
+    width: 100%;
+    height: 120px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background: #d3cfcf;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.top.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.eq {
+    grid-column: 3 / span 2;
+    height: 30px;
+    background: #ff8800;
+}
+
+.eq:hover {
+    background: #fdaf55;
+}
+
+button{
+    padding: 3px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+.btn.erase2 {
+    background: red;
+}
+
+.btn.erase2:hover {
+    background: rgb(252, 105, 105);
+}
+/*End body*/
